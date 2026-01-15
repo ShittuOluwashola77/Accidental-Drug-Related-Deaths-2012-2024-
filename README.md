@@ -12,3 +12,21 @@ Clinical Data: Description of Injury, Cause of Death, and Manner of Death.
 
 ## :brain: Models and Performance
 ThIS project implements both regression and classification models to evaluate different aspects of the data.
+
+## :robot: Regression Models
+
+Used to predict numerical representations of outcomes:
+
+Linear Regression: Achieved a Mean Absolute Error (MAE) of ~2143.72.
+
+Decision Tree Regressor: Outperformed Linear Regression with a lower MAE of ~1948.20.
+
+Based on initial testing, the Decision Tree consistently performed better across Accuracy, Precision, Recall, and F1-score metrics compared to Logistic Regression (as seen in the notebook output snippet).
+
+## :balance_scale: Key Implementation Steps
+
+Data Preprocessing: Handled missing values and used LabelEncoder to transform categorical text data (like Race and City) into numerical format for the models.
+
+Model Training: Split the data into training and testing sets using train_test_split.
+
+Evaluation: Evaluated models using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and Precision.
